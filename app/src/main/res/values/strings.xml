@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">Kueq Bank</string>
+    <string name="log_in_f">Login</string>
+    <string name="sign_up_f">Sign Up</string>
+    <string name="username_f">Enter Username</string>
+    <string name="rb_email">Enter Email</string>
+    <string name="password">Password</string>
+    <string name="re_enter_password">Re-Enter Password</string>
+    <string name="err_msg_password">Enter Valid Password</string>
+    <string name="err_msg_uname">Enter Valid Username</string>
+    <string name="forgot_password_q">Forgot Password</string>
+    <string name="medium_text">Medium Text</string>
+    <string name="accounts_overview">Account Overview</string>
+    <string name="contact_email">contact@kueq.co.ke</string>
+    <string name="help_line_number">0700000000</string>
+    <string name="need_help">Need Help</string>
+    <string name="statement">Transaction Statement</string>
+    <string name="beneficiaries">Add Beneficiaries.</string>
+    <string name="apply_for_loan">Apply for Loan</string>
+    <string name="charges">Withdraw Funds</string>
+    <string name="transfer">Transfer</string>
+    <string name="accounts">Deposit Cash</string>
+    <string name="total_loan">Total Loan Balance</string>
+    <string name="amount">Amount</string>
+    <string name="total_saving">Total Savings</string>
+    <string name="small_text">amount</string>
+</resources>

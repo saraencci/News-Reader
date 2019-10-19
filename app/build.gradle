@@ -1,0 +1,102 @@
+apply plugin: 'com.android.application'
+
+
+android {
+    compileSdkVersion rootProject.ext.compileSdkVersion
+    buildToolsVersion rootProject.ext.buildToolsVersion
+
+    defaultConfig {
+        applicationId "ke.co.ipandasoft.newsreader"
+        minSdkVersion rootProject.ext.minSdkVersion
+        targetSdkVersion rootProject.ext.targetSdkVersion
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        vectorDrawables.useSupportLibrary = true
+        multiDexEnabled true
+        versionCode 7
+        versionName "v1.0.6"
+    }
+
+
+    packagingOptions {
+
+    }
+
+
+    lintOptions {
+        checkReleaseBuilds false
+        abortOnError false
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+
+    compileOptions.incremental = false
+
+
+    compileOptions {
+        sourceCompatibility '1.8'
+        targetCompatibility '1.8'
+    }
+
+}
+
+dependencies {
+
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation "androidx.appcompat:appcompat:$rootProject.supportLibraryVersion"
+    implementation "com.google.android.material:material:$rootProject.supportLibraryVersion"
+    implementation "androidx.cardview:cardview:$rootProject.supportLibraryVersion"
+    implementation "androidx.recyclerview:recyclerview:$rootProject.supportLibraryVersion"
+    implementation "androidx.vectordrawable:vectordrawable:$rootProject.supportLibraryVersion"
+    implementation('com.squareup.retrofit2:retrofit:$rootProject.retrofitVersion') {
+
+        exclude module: 'okhttp'
+    }
+    implementation "com.squareup.retrofit2:converter-gson:$rootProject.retrofitVersion"
+    implementation "com.squareup.retrofit2:adapter-rxjava2:$rootProject.retrofitVersion"
+    implementation "com.squareup.okhttp3:okhttp:$rootProject.okHttp3Version"
+    implementation "com.squareup.okhttp3:logging-interceptor:$rootProject.okHttp3Version"
+
+    //Butter Knife
+    implementation "com.jakewharton:butterknife:$rootProject.butterKnifeVersion"
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0-beta01'
+    implementation 'androidx.appcompat:appcompat:1.0.2'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+    annotationProcessor "com.jakewharton:butterknife-compiler:$rootProject.butterKnifeVersion"
+    implementation('com.crashlytics.sdk.android:crashlytics:2.6.7@aar') {
+        transitive = true
+    }
+
+    //multidex
+    implementation "androidx.multidex:multidex:$rootProject.multiDexVersion"
+
+
+    //DESIGN SUPORT LIBS
+    implementation "com.google.android.material:material:$rootProject.designSupportVersion"
+
+
+    //VOLLEY
+    implementation 'com.android.volley:volley:1.1.0'
+    implementation 'com.google.code.gson:gson:2.8.4'
+
+    //SMART TOOLBAR IMP
+    implementation 'com.github.chivorns:smarttoolbar:1.0.12'
+
+    //LOADING DIALOG
+    implementation 'com.wang.avi:library:2.1.3'
+
+    //SWEETALERTDIALOG
+    implementation 'com.github.mjn1369:prettydialog:1.0.4'
+
+    //circleimageview
+    implementation 'de.hdodenhof:circleimageview:3.0.1'
+
+
+
+}

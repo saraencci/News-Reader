@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/menu_pr_top">
+        <item
+            android:id="@+id/icon__share_app"
+            android:title="Share App"/>
+
+    </group>
+
+
+    <group android:checkableBehavior="single"
+        android:id="@+id/privacy">
+
+
+
+        <item
+            android:id="@+id/privacy_policy"
+            android:title="Privacy Policy"/>
+
+        <item
+            android:id="@+id/log_out"
+            android:title="Sign Out"/>
+
+
+    </group>
+</menu>

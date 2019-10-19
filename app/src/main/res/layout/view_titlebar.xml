@@ -1,0 +1,12 @@
+<com.chivorn.smarttoolbar.SmartToolbar android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimary"
+    android:layout_height="?actionBarSize"
+    android:id="@+id/toolbar"
+    app:smtb_titleColor="@color/white"
+    app:smtb_titleTextSize="17sp"
+    app:smtb_leftBtnIcon="@drawable/ic_arrow_back_white_24dp"
+    app:smtb_showLeftBtn="true"
+    app:smtb_showRightBtn="false"
+    xmlns:android="http://schemas.android.com/apk/res/android" />
+
